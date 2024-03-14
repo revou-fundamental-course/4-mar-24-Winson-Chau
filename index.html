@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> BMI Calculator</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <h1>BMI Calculator - Winson</h1>
+        </header>
+        <main>
+            <div class="main-container">
+                <!-- Form Display -->
+                <div class="container-item">
+                    <h2>Form BMI</h2>
+                    <section>
+                        <p>Berat Badan Ideal adalah...</p>
+                    </section>
+
+                    <section class="container-form">
+                        <div>
+                            <label>Jenis Kelamin</label><Br>
+                            <input type="radio" id="sex-man">
+                            <label for="sex-man">Laki-laki</label>
+                            <input type="radio" id="sex-woman">
+                            <label for="sex-woman">Perempuan</label>
+                        </div>
+                        <div>
+                            <label>Berat Badan (Kg)</label><br>
+                            <input type="number" class="form-item" id="weight-input">
+                        </div>
+                        <button type="button" id="calculate-button" onclick="calculate()">Hitung BMI</button>
+                        <button type="button">Reset</button>
+                    </section>
+
+                    <!-- Feature Description -->
+                    <section>
+                        <header>
+                            <h1 style="text-align:left;">Keunggulan Fitur</h1>
+                            <ol type="1">
+                                <li>Menghitung Berat Badan </li>
+                                <li>Menentukan Kategori Berat Badan Ideal atau Tidak</li>
+                                <li>Mempersiapkan Program Penurunan Berat Badan</li>
+                            </ol>
+                        </header>
+                    </section>
+                </div>
+
+                <!-- Result Display -->
+                <div class="container-item">
+                    <h2>Result</h2>
+                    <section class="container-result">
+                        <h4>Berat Bedan Lebih</h4>
+                        <h1 id="result-bmi">0</h1>
+                        <h4>Anda Memiliki Berat Bedan Berlebih</h4>
+                        <button type="button">Download Hasil BMI</button>
+                    </section>
+
+                    <!-- Result description -->
+                    <section>
+                        <header>
+                            <h4 style="text-align: left;">Hasil BMI Usia 0</h4>
+                            <p>Anda berada dalam kategori obesitas ...</p>
+                            <P>Cara terbaik untuk menurunkan berat badan ...</P>
+                        </header>
+                    </section>
+                </div>
+            </div>
+        </main>
+        <footer></footer>
+        <script src="js/script.js"></script>
+    </body>
+</html>
